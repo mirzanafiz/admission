@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">admisson</string>
+    <string name="mainRegiName">your name</string>
+    <string name="mainRegiEmail">your email</string>
+    <string name="headingRegistration">insert your information</string>
+    <string name="NextButton">next</string>
+</resources>

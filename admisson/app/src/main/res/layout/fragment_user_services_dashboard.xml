@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:weightSum="1">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="subscriptions"
+        android:id="@+id/textView24" />
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/textView24"
+        android:layout_toLeftOf="@+id/dashHscGrade"
+        android:layout_toStartOf="@+id/dashHscGrade"
+        android:id="@+id/linLayout"
+        android:layout_alignParentBottom="true"></LinearLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="my ssc grade :"
+        android:id="@+id/DashSscGrdae"
+        android:layout_below="@+id/textView24"
+        android:layout_toRightOf="@+id/textView24"
+        android:layout_toEndOf="@+id/textView24"
+        android:layout_marginLeft="97dp"
+        android:layout_marginStart="97dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="my hsc grade :"
+        android:id="@+id/dashHscGrade"
+        android:layout_below="@+id/DashSscGrdae"
+        android:layout_alignLeft="@+id/DashSscGrdae"
+        android:layout_alignStart="@+id/DashSscGrdae" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="subscriptions : "
+        android:id="@+id/dashSubscription"
+        android:layout_below="@+id/dashHscGrade"
+        android:layout_alignLeft="@+id/dashHscGrade"
+        android:layout_alignStart="@+id/dashHscGrade" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="last updated :"
+        android:id="@+id/dashLastUpdated"
+        android:layout_below="@+id/dashSubscription"
+        android:layout_alignLeft="@+id/dashSubscription"
+        android:layout_alignStart="@+id/dashSubscription" />
+
+    <Button
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="update"
+        android:id="@+id/dashUpdate"
+        android:layout_below="@+id/dashLastUpdated"
+        android:layout_alignLeft="@+id/dashLastUpdated"
+        android:layout_alignStart="@+id/dashLastUpdated"
+        android:onClick="dashUpdate" />
+
+    <Spinner
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/spinner"
+        android:layout_below="@+id/dashUpdate"
+        android:layout_toRightOf="@+id/linLayout"
+        android:layout_toEndOf="@+id/linLayout"
+        android:focusable="false" />
+</RelativeLayout>
